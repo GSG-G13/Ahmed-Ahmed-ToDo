@@ -1,12 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-.sub-header{
+.header {
+    padding-top: 50px;
+    padding-right: 100;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+
+    background-image: url('../assests/header.jpg');
+    height: 200px;
+    background-position: center;
+    object-fit: cover;
+    font-family: 'Work Sans', ;
+
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    font-size: 30px;
+    font-weight: 400;
+
+
+}
+
+#time {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1rem;
+
+
+
+}
+
+.sub-header {
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -15,7 +52,43 @@
     font-size: 0.875rem;
 }
 
-.footer{
+#box {
+    width: 100%;
+    height: 100px;
+
+    border: 5px solid gray;
+    margin: 0;
+}
+
+/* .task {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30%;
+} */
+
+/* .discription {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 50%;
+    
+} */
+#box .top,
+#box .bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1rem;
+    
+}
+.delete {
+    backdground: url('../assests/delete.png')
+    display: flex;
+
+}
+
+.footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -27,12 +100,12 @@
     border-top: 1px solid #818182;
 }
 
-.total{
+.total {
     color: #818182;
     font-size: 0.875rem;
 }
 
-button.add{
+button.add {
     outline: none;
     border: none;
     background-color: #2BBCF0;
@@ -43,7 +116,7 @@ button.add{
     cursor: pointer;
 }
 
-button.add svg{
+button.add svg {
     fill: #fff;
     width: 30px !important;
     height: 30px !important;
