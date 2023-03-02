@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 
 * {
     padding: 0;
@@ -9,38 +8,24 @@
 }
 
 .header {
-    padding-top: 50px;
-    padding-right: 100;
-    color: white;
     font-size: 20px;
-    width: 100%;
-
     background-image: url('../assests/header.jpg');
-    height: 200px;
+    height: 150px;
     background-position: center;
     object-fit: cover;
-    font-family: 'Work Sans', ;
-
+    padding: 2rem 1rem
 }
 
-.title {
-    display: flex;
-    justify-content: flex-start;
-    padding-bottom: 5rem;
-    padding-left: 1rem;
-    font-size: 30px;
-    font-weight: 400;
-
-
+.header .title {
+    font-size: 34px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 5rem;
 }
 
-#time {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 1rem;
-
-
-
+.header .time{
+    font-size: 18px;
+    color: #c7ccd1;
 }
 
 .sub-header {
@@ -52,43 +37,54 @@
     font-size: 0.875rem;
 }
 
-#box {
-    width: 100%;
-    height: 100px;
-
-    border: 5px solid gray;
-    margin: 0;
+.tasks-container{
+    padding: 3rem 1rem;
+    overflow-y: scroll;
 }
-
-/* .task {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 30%;
-} */
-
-/* .discription {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    width: 50%;
-    
-} */
-#box .top,
-#box .bottom {
+.task{
+    border: 1px solid #2BBCF0;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+.task.completed{
+    opacity: 0.5;
+}
+.task .top{
+    margin-bottom: 0.5rem;
+}
+.task .top,
+.task .bottom {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 1rem;
-    
 }
-.delete {
-    backdground: url('../assests/delete.png')
+
+.task .task-title{
+    font-weight: 500;
+}
+.task .task-desc,
+.task .task-time{
+    color: lightslategray;
+}
+.task .icons{
     display: flex;
-
+    align-items: center;
+    gap: 1rem
 }
-
-.footer {
+.task button.delete{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
+.task button.delete svg{
+    fill: #2BBCF0;
+    width: 24px;
+    height: 24px;
+}
+.footer{
+    z-index: 999;
     position: fixed;
     bottom: 0;
     left: 0;

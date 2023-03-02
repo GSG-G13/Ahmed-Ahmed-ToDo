@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #46529C;
+}
+
+.head{
+    width: 100%;
+}
+
+.head .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 100%;
+}
+.head .top a svg{
+    fill: #3D83C1;
+    width: 30px !important;
+}
+.head .top h3{
+    font-weight: 400;
+    color: #fff;
+}
+.head .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+.head .bottom span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3D83C1;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.head .bottom svg{
+    width: 50px;
+    height: 50px;
+    fill: #3D83C1;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+}
+
+form input:not(:last-child){
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-bottom: 1px solid #616BB2;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+form input::placeholder, input[type="date"]::placeholder{
+    color: #616BB2;
+}
+
+input.add-btn{
+    margin-top: 1rem;
+    padding: 1rem 0;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #2BBCF0;
+    box-shadow: 0 0 3px #9ad2e7;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 0.6;
+    filter: invert(0.8);
+}
