@@ -1,3 +1,3 @@
-var datetime = new Date();
+let datetime = new Date();
 console.log(datetime);
-document.getElementById("time").textContent = datetime; 
+document.getElementById("time").textContent = datetime.toDateString(); 

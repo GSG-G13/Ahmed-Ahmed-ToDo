@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-
+    <title>Todo App</title>
+    <link rel="stylesheet" href="home/style.css">
+    <script src="home/script.js" defer></script>
 </head>
+
 <body>
- <div class="header">Ahmed-Ahmed ToDo App</div>
- <time datatime>time should go here </time>
- <script src="home/script.js"></script>
+    <div class="header">
+        <span class="title">To Do App
+        <span id="time" class="time"> </span>
+    </div>
+    <div class="list element">
+        <div id="box">
+            <div class="top">
+                <p class="task">Task Name</p>
+                <time class="deadline">time</time>
+
+            </div>
+            <div class="bottom">
+                <P class="discription">Write Task Desceiption Here</P>
+                <div class="icons">
+                    <button type="button" class="delete">Delete</button>
+                    <input type="checkbox" class="completed"/>
+
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    <div class="sub-header">
+        <h3 class="done">Done Tasks</h3>
+        <h3 class="undo">Undo Tasks</h3>
+    </div>
+    <div class="footer">
+        <h3 class="total">Undo Tasks</h3>
+        <button class="add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" />
+            </svg></button>
+    </div>
 </body>
+
 </html>
