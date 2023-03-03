@@ -18,6 +18,6 @@ completedTasks()
 function unCompletedTasks() {
     let tasks = Array.from(JSON.parse(localStorage.getItem('tasks')))
 
-    undoTasks.innerText = ` ${tasks.filter(task => !task.completed).length} `
+    undoTasks.textContent = ` ${tasks.filter(task => !task.completed).length} `
 }
 unCompletedTasks()
