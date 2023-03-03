@@ -96,7 +96,8 @@
     border-top: 1px solid #818182;
 }
 
-.total-tasks {
+.total, 
+.total span{
     color: #818182;
     font-size: 0.875rem;
 }
